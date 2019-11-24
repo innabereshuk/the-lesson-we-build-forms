@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,700&display=swap');
+
+html {
+    height: 100%;
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a, button {
+    transition: all .4s ease-in;
+}
+
+body {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+}
+
+section {
+    width: 100%;
+    min-width: 800px;
+    min-height: 100vh;
+    background: lightpink;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #262626;
+    line-height: 1.5;
+    display: inline-flex;
+   
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 9rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 0;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+   
+}
+
+h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.7rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+.flex {
+   display: flex;
+   justify-content: flex-start;
+   margin-top: 5rem;
+}
+
+.adress {
+   margin: 0 0 0 10rem;
+    
+}
+
+.adress__big {
+    font-size: 2rem;
+    margin: 0;
+    padding: .2rem 0 1.2rem 0;
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 7rem 0 9rem;
+    width: 50rem;
+    height: 44.5rem;
+}
+
+input {
+    height: 5rem;
+    margin-bottom: 1.6rem;
+}
+
+
+textarea {
+    resize: none;
+}
+
+textarea, input {
+    background: #00c4c4;
+    opacity: .5;
+    border: 0;
+    padding: 2rem;
+    font-size: 1.7rem;
+}
+input[type="text"]::placeholder {
+    color: white;
+    opacity: .8;
+}
+
+textarea::placeholder {
+    color: white;
+    opacity: .8;
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+    background: #00c4c4;
+    opacity: 1;
+    outline: none;
+    border-left: .5rem solid #355b82;
+    color: white;
+}
+
+footer {
+    background: #262626;
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.smoll {
+      font-size: 1.5rem;
+      font-family: 'Raleway', sans-serif;
+}
+
+.light {
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.pacifico {
+    font-size: 2.5rem;
+}
+
+.green {
+    color: #f12b55;
+    font-weight: 700;
+}
+
+
+/*Helpers*/
+
+.text-center {
+    text-align: center;
+}
+
