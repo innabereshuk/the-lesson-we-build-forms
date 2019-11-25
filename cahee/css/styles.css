@@ -92,6 +92,29 @@ input {
     margin-bottom: 1.6rem;
 }
 
+input[name="username"] {
+    text-transform: capitalize;
+}
+
+.button {
+    width: 50%;
+    margin: 4.6rem auto;
+    font-size: 2.2rem;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background: transparent;
+    border: 3px solid #355b82;
+    transform: scale(1.1, 1.1);
+    color: #355b82;
+}
+
 
 textarea {
     resize: none;
@@ -104,7 +127,7 @@ textarea, input {
     padding: 2rem;
     font-size: 1.7rem;
 }
-input[type="text"]::placeholder {
+input[placeholder]::placeholder {
     color: white;
     opacity: .8;
 }
