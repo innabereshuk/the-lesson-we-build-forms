@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+a, button {
+    transition: all .4s ease-in;
+}
+
+html {
+    height: 100%;
+    font-size: 10px;
+}
+
+body {
+    margin: auto;
+    height: 100%;
+    font: 400 1.8rem/1.8 'Quicksand', sans-serif;
+    background-color: #282828;
+}
+
+.container {
+    width: 800px;
+    height: 600px;
+    background-color: #fff;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    margin: 5% auto;
+    position: relative;
+     
+}
+
+.content {
+    display: block;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    background: linear-gradient(-145deg, #b86bd5 0%, #2e21ab 75%);
+    box-shadow: -1px 10px 20px #14293f;
+    padding: 45px 70px;
+  
+ }
+
+img {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     opacity: .5;
+ }
+
+ label, input {
+     display: block;
+     letter-spacing: 1.5px;
+ }
+
+ label,
+ input[type="submit"] {
+     font-size: 1.6rem;
+ }
+
+ .link {
+    display: inline-block;
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: 1.5;
+    opacity: .7;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.link-big {
+    font-size: 1.6rem;
+}
+
+.link-sm,
+.checked {
+    font-size: 1.3rem;
+}
+
+.link-sm {
+    border-bottom: 1px solid white;
+    opacity: .4;
+}
+
+.link-sm-margin {
+    margin-right: 30px;
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+    border-bottom: 1px solid #e66a64;
+    opacity: 1;
+}
+
+input {
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    opacity: .5;
+}
+
+input:hover,
+input:focus,
+input:active {
+    outline: none;
+}
+
+.line {
+    height: 4rem;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 9px;
+}
+
+#checked:checked + label.checked {
+  color: #23ae92;
+} 
+
+
+.checkbox {
+    display: flex;
+    margin-top: 20px;
+}
+
+.line-button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background: #23ae92;
+    color: #fff;
+    border: none;
+    opacity: 1;
+}
+
+
+
+
+
+ 
+
