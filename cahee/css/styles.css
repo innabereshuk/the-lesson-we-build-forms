@@ -7,6 +7,7 @@ html {
 
 * {
     box-sizing: border-box;
+    outline: none;
 }
 
 a, button {
@@ -22,7 +23,6 @@ body {
 
 section {
     width: 100%;
-    min-width: 800px;
     min-height: 100vh;
     background: lightpink;
     background-repeat: no-repeat;
@@ -35,6 +35,8 @@ section {
 
 .container {
     width: 1500px;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
 }
 
@@ -79,7 +81,7 @@ p {
 }
 
 
-.column {
+#myform {
     display: flex;
     flex-direction: column;
     margin: 0 7rem 0 9rem;
@@ -96,7 +98,7 @@ input[name="username"] {
     text-transform: capitalize;
 }
 
-.button {
+input[type="submit"] {
     width: 50%;
     margin: 4.6rem auto;
     font-size: 2.2rem;
@@ -106,13 +108,23 @@ input[name="username"] {
     opacity: 1;
 }
 
-.button:hover,
-.button:focus,
-.button:active {
-    background: transparent;
-    border: 3px solid #355b82;
-    transform: scale(1.1, 1.1);
-    color: #355b82;
+.phone {
+    display: inline-block;
+}
+
+#country {
+    width: 15rem;
+    height: 5rem;
+    background: #00c4c4;
+    opacity: .5;
+    border: 0;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+#phone {
+    width: calc(50rem - 15rem - .5rem);
 }
 
 
@@ -127,25 +139,43 @@ textarea, input {
     padding: 2rem;
     font-size: 1.7rem;
 }
+
+
 input[placeholder]::placeholder {
     color: white;
     opacity: .8;
 }
+
 
 textarea::placeholder {
     color: white;
     opacity: .8;
 }
 
+
+#country:active,
+#country:focus,
 input:active,
 input:focus,
 textarea:active,
 textarea:focus {
     background: #00c4c4;
     opacity: 1;
-    outline: none;
     border-left: .5rem solid #355b82;
     color: white;
+}
+
+#phone:active,
+#phone:focus {
+    border-left: none;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background: transparent;
+    border: 3px solid #355b82;
+    transform: scale(1.1, 1.1);
+    color: #355b82;
 }
 
 footer {
@@ -156,7 +186,6 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
-
 
 
 .smoll {
@@ -185,3 +214,5 @@ footer {
     text-align: center;
 }
 
+
+   

@@ -8,6 +8,16 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/d357e3b57e.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script type="text/javascript">
+        if (window.jQuery) alert("jQuery подключен");
+        else alert("jQuery не подключен");
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        alert(jQuery.fn.jquery);
+        });
+        </script> -->
 </head>
 <body>
     <section class="section" style="background-image: url(img.png);">
@@ -16,12 +26,19 @@
             <p class="text-center">For new projects, ideas, business or anything<br>
                     you'd like to discuss, contact with me!</p>
             <div class="flex">
-                <form class="column" action="#" method="POST">
-                    <input type="text" name="username" placeholder="Auskteez Tran">
+                <form id="myform" action="" method="GET">
+                    <input type="text" name="username" placeholder="Auskteez Tran" autofocus required>
                     <input type="email" name="email" placeholder="Your email..." required>
-                    <input type="tel" name="phone" placeholder="Your phone number..." required>
-                    <textarea name="comments" rows="15" cols="10" placeholder="Your messge..."></textarea>
-                    <input class="button" type="button" name="submit" value="Submit">
+                    <div class="phone__ph">
+                        <select id="country">
+                             <option value="ru">Россия +7</option>
+                             <option value="ua">Украина +38</option>
+                             <option value="by">Белоруссия +37</option>
+                         </select>
+                         <input data-mask="(999) 999 99 99" type="tel" name="phone" id="phone" placeholder="Your phone number..." required>
+                     </div>
+                    <textarea name="comments" rows="15" cols="10" placeholder="Your message..."></textarea>
+                    <input type="submit" value="Submit">
                 </form>
                 <div class="adress">
                     <h2>ADDRESS</h2>
@@ -39,5 +56,8 @@
         <span class="pacifico">Cahee</span>
         <span class="light">Made with <span class="green"> love </span>by Auskteez</span>
     </footer>
+
+    <script src="jquery.mask.min.js"></script>
+    <script src="jquery.custom.js"></script>
 </body>
 </html>

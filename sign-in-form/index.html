@@ -8,33 +8,57 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/d357e3b57e.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <section class="container">
-        <form class="content" action="#" method="POST">
+    </head>
+    <body>
+        <section class="container">
             <img src="image.png" alt="">
-            <div>
-                 <a class="link link-big link-sm-margin" href="#">Sign in</a>
-                 <a class="link link-big" href="#">Join us</a>
-            </div>
-             <div>
-                 <label for="name">Username</label>
-                 <input class="line" type="text" name="username" id="name">
-            </div>
-             <div>
-                 <label for="password">Password</label>
-                 <input class="line" type="password" name="password" id="password"> 
-             </div>
-            <div class="checkbox">
-                 <input type="checkbox" checked id="checked">
-                 <label class="checked" for="checked">Keep me signed in</label>
-            </div>
-            <input class="line line-button" type="submit" name="submit" value="Sign in"> 
-             <div>
-                 <a class="link link-sm link-sm-margin" href="#">Forgot password</a>
-                 <a class="link link-sm"  href="#">Create an account</a>
-             </div>
-        </form>
-    </section>
-</body>
+                <div id="wrapper">
+                        <a class="link-big link-login" href="#">Sign in</a>
+                        <a class="link-big link-register" href="#">Join us</a>
+                    <div id="tologin" class="animate form">
+                        <form action="#" method="GET">
+                            <p>
+                                <label for="name">Username</label>
+                                <input class="line" type="text" name="username" id="name" required>
+                            </p>
+                            <p>
+                                <label for="password">Password</label>
+                                <input class="line" type="password" name="password" id="password" minlength="3" required> 
+                            </p>
+                            <p>
+                                <label class="checked" for="checked"> 
+                                <input type="checkbox" id="checked">Keep me signed in</label>
+                            </p>
+                            <p class="login button"> 
+                                <input class="line line--button" type="submit" value="Sign in"> 
+                            </p>
+                            <a class="link-sm link-sm-margin" href="#">Forgot password</a>
+                            <a href="#toregister" class="link-sm">Create an account</a>
+                        </form> 
+                    </div>
+                        
+                    <div id="toregister" class="animate form">
+                        <form action="#" method="GET">
+                            <p>
+                                <label for="name">Username</label>
+                                <input class="line" type="text" name="username" id="name--register" autofocus required>
+                            </p>
+                            <p>
+                                <label for="password">Password</label>
+                                <input class="line" type="password" name="password" id="password--register" minlength="3" required>  
+                            </p>    
+                            <p>
+                                <label for="password-repeat">Password repeat</label>
+                                <input class="line" type="password" name="password" id="password-repeat">
+                            </p>
+                            <p class="signin button"> 
+                                <input class="line line--button " type="submit" value="Join us"/> 
+                            </p>
+                            <a href="#" class="link-sm link-sm-margin">Forgot password</a>
+                            <a class="link-sm" href="#">Create an account</a>
+                        </form>
+                    </div>
+                </div>
+        </section>
+    </body>
 </html>
