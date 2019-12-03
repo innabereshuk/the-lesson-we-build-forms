@@ -53,11 +53,12 @@ img {
 }
 
 #toregister {	
-    z-index: 22;
-    opacity: 0;
+    display: none;
+    /* z-index: 22; */
+    /* opacity: 0; */
 }
 #tologin {
-    z-index: 21;
+    /* z-index: 21; */
 }
 
 
@@ -71,16 +72,21 @@ a {
     margin-bottom: 40px;
 }
 
-a:hover,
-a:focus,
-a:active {
+input[class="link-big"]:hover,
+input[class="link-big"]:focus,
+input[class="link-big"]:active {
     border-bottom: 1px solid #e66a64;
     opacity: 1;
 }
 
-.animate form {
-    margin-top: -2rem;
+.tologin {
+    margin-top: 4rem;
 }
+
+.toregister {
+    margin-top: 2rem;
+}
+
 
 .line {
     height: 4rem;
@@ -154,6 +160,24 @@ input[type="checkbox"] {
     background-color: #08362f;
     border: 2px solid #08362f ;
 }
+
+/* input[data-target="tologin"]:checked ~ #tologin {
+    display: block;
+}
+
+input[data-target="tologin"]:checked ~ #toregister {
+    display: none;
+}
+ 
+
+input[data-target="toregister"]:checked ~ #toregister {
+    display: block;
+}
+
+input[data-target="toregister"]:checked ~ #tologin {
+    display: none;
+} */
+
 
 
 
