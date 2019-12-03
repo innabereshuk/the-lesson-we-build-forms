@@ -52,13 +52,24 @@ img {
     opacity: .5;
 }
 
-#toregister {	
-    z-index: 22;
+* #toregister {	
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
     opacity: 0;
+    
 }
 #tologin {
-    z-index: 21;
+    z-index: 0; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+ 
 }
+
 
 
 a {
@@ -79,7 +90,7 @@ a:active {
 }
 
 .animate form {
-    margin-top: -2rem;
+    margin: -2rem 7rem  0;
 }
 
 .line {
