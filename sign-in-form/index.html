@@ -13,8 +13,8 @@
         <section class="container">
             <img src="image.png" alt="">
                 <div id="wrapper">
-                        <a class="link-big link-login" href="#">Sign in</a>
-                        <a class="link-big link-register" href="#">Join us</a>
+                    <label class="link-big link-login" for="a1">Sign in</label><input type="radio" name="a" id="a1" value="1" checked data-target="tologin">
+                    <label class="link-big link-register" for="a2">Join us</label><input type="radio" name="a" id="a2" value="2" data-target="toregister">
                     <div id="tologin" class="animate form">
                         <form action="#" method="GET">
                             <p>
@@ -29,9 +29,9 @@
                                 <label class="checked" for="checked"> 
                                 <input type="checkbox" id="checked">Keep me signed in</label>
                             </p>
-                             <input class="line login--button" type="submit" value="Sign in"> 
+                            <button type="button" class="line line--button">Sign in</button> 
                             <a class="link-sm link-sm-margin" href="#">Forgot password</a>
-                            <a href="#toregister" class="link-sm">Create an account</a>
+                            <a href="#" class="link-sm">Create an account</a>
                         </form> 
                     </div>
                         
@@ -49,7 +49,7 @@
                                 <label for="password-repeat">Password repeat</label>
                                 <input class="line" type="password" name="password" id="password-repeat">
                             </p>
-                            <input class="line login--button" type="submit" value="Join us"/> 
+                            <button type="button" class="line line--button">Join us</button> 
                             <a href="#" class="link-sm link-sm-margin">Forgot password</a>
                             <a class="link-sm" href="#">Create an account</a>
                         </form>
