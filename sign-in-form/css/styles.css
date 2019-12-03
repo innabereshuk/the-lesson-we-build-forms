@@ -97,6 +97,11 @@ a:active {
     margin: -2rem 7rem  0;
 }
 
+.toregister {
+    margin-top: 2rem;
+}
+
+
 .line {
     height: 4rem;
     width: 100%;
@@ -169,6 +174,24 @@ input[type="checkbox"] {
     background-color: #08362f;
     border: 2px solid #08362f ;
 }
+
+input[data-target="tologin"]:checked ~ #tologin {
+    display: block;
+}
+
+input[data-target="tologin"]:checked ~ #toregister {
+    display: none;
+}
+ 
+
+input[data-target="toregister"]:checked ~ #toregister {
+    display: block;
+}
+
+input[data-target="toregister"]:checked ~ #tologin {
+    display: none;
+} 
+
 
 
 input[data-target="tologin"]:checked ~ #tologin {
