@@ -161,7 +161,7 @@ input[type="checkbox"] {
     border: 2px solid #08362f ;
 }
 
-/* input[data-target="tologin"]:checked ~ #tologin {
+input[data-target="tologin"]:checked ~ #tologin {
     display: block;
 }
 
@@ -176,7 +176,7 @@ input[data-target="toregister"]:checked ~ #toregister {
 
 input[data-target="toregister"]:checked ~ #tologin {
     display: none;
-} */
+} 
 
 
 
